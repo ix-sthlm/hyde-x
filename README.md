@@ -15,6 +15,13 @@ You can find a live site using this theme [here](http://andreimihu.com) and the 
 * [Questions, ideas, bugs, pull requests?](#questions-ideas-bugs-pull-requests)
 * [License](#license)
 
+### Changes in this fork
+* Smaller icons for github etc in sidebar
+* Added `author` to blogposts, also listing of authors posts
+* Listing of posts in categories
+* Option (bool) `params.sidebar_license_page` to show or hide license link in sidebar
+* Add meta-tag to not leak refererrs
+
 ### Installation
 
 ```

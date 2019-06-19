@@ -1,4 +1,8 @@
 <div class="sidebar">
+  {{ if isset .Site.Params "logopath" }}
+    <img src="{{ .Site.Params.logoPath }}" alt="logo" title="{{ .Site.Author.name }}" />
+  {{ end }}
+
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
       {{ if isset .Site.Params "gravatarHash" }}

@@ -1,6 +1,6 @@
 <div class="sidebar">
   {{ if isset .Site.Params "logopath" }}
-    <img src="{{ .Site.Params.logoPath }}" alt="logo" title="{{ .Site.Author.name }}" />
+    <a href="{{ "/" | absURL }}"><img src="{{ .Site.Params.logoPath }}" alt="logo" title="{{ .Site.Author.name }}" /></a>
   {{ end }}
 
   <div class="container sidebar-sticky">
@@ -9,7 +9,7 @@
         <img src="https://www.gravatar.com/avatar/{{ .Site.Params.gravatarHash }}?s=200"
              alt="gravatar" title="{{ .Site.Author.name }}">
       {{ end }}
-      <a href="{{ "/" | absURL }}"><h1>{{ .Site.Author.name }}</h1></a>
+      {{ with .Site.Author.name }}<a href="{{ "/" | absURL }}"><h1>{{ .Site.Author.name }}</h1></a>{{ end }}
       {{ with .Site.Params.tagline }}<p class="lead">{{ . | markdownify }}</p>{{ end }}
     </div>
 

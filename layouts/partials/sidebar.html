@@ -3,7 +3,7 @@
     <a href="{{ "/" | absURL }}"><img src="{{ .Site.Params.logoPath }}" alt="logo" title="{{ .Site.Author.name }}" /></a>
   {{ end }}
   {{ if isset .Site.Params "embedlogopath" }}
-    <a href="{{ "/" | absURL }}">
+    <a id="logo" href="{{ "/" | absURL }}">
         {{ readFile .Site.Params.embedLogoPath | safeHTML }}
     </a>
   {{ end }}

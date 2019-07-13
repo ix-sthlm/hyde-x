@@ -70,6 +70,19 @@ html {
   }
 }
 
+.sidebar a#logo {
+  display: block;
+  height: calc(100% - 300px);
+}
+
+.sidebar a#logo svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
 /* Sidebar links */
 .sidebar a {
   color: #fff;
